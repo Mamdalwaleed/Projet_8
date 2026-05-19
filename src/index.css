@@ -9,8 +9,37 @@ html {
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+}
+h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
+h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 50%;
+  height: 3px;
+  background-color: #00bcd4;
+}
+
+button {
+  background-color: #00bcd4;
+  color: white;
+}
+
+button:hover {
+  background-color: #0097a7;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -224,4 +253,47 @@ button:hover {
 
 .contact-form button:hover {
   background-color: #0097a7;
+}
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: black;
+  color: white;
+}
+/* Navbar responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* Hero responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Sections responsive */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
 }
