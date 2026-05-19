@@ -165,3 +165,52 @@ button:hover {
   text-decoration: none;
   font-weight: bold;
 }
+.contact {
+  padding: 100px 50px;
+  background-color: #111;
+  color: white;
+}
+
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  padding: 15px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0097a7;
+}
