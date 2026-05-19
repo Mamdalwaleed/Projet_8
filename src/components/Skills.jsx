@@ -27,6 +27,24 @@ function Skills() {
         <div className="skill-card">
           <h3>Responsive Design</h3>
         </div>
+        <div className="skill-card">
+          <h3>Node.js</h3>
+        </div>
+
+        <div className="skill-card">
+          <h3>Express</h3>
+        </div>
+
+        <div className="skill-card">
+          <h3>API REST</h3>
+        </div>
+
+        <div className="skill-card">
+          <h3>MongoDB / MySQL</h3>
+        </div>
+        <div className="skill-card">
+          <h3>Authentication JWT</h3>
+        </div>
       </div>
     </section>
   );
