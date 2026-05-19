@@ -7,3 +7,161 @@
 body {
   font-family: Arial, sans-serif;
 }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: black;
+  color: white;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+section {
+  padding: 100px 50px;
+}
+.hero {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  background-color: #111;
+  color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-subtitle {
+  color: #00bcd4;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #00bcd4;
+}
+
+.hero-description {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #cccccc;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.about {
+  padding: 100px 50px;
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+.about h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  max-width: 800px;
+}
+.skills {
+  padding: 100px 50px;
+  background-color: white;
+}
+
+.skills h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background-color: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: #00bcd4;
+}
+.projects {
+  padding: 100px 50px;
+  background-color: #f5f5f5;
+}
+
+.projects h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
