@@ -1,8 +1,8 @@
 /* =========================
-   GOOGLE FONT
+   FONT MODERNE
 ========================= */
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap");
 
 /* =========================
    RESET GLOBAL
@@ -20,14 +20,14 @@ html {
 }
 
 /* =========================
-   BASE
+   BODY
 ========================= */
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #0b0f19;
   color: #e5e7eb;
-  line-height: 1.6;
+  line-height: 1.7;
   overflow-x: hidden;
 }
 
@@ -38,25 +38,20 @@ body {
 h1,
 h2,
 h3 {
-  color: #f9fafb;
-  letter-spacing: -1px;
   font-weight: 700;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+  color: #f9fafb;
 }
 
 p {
   color: #cbd5e1;
-  line-height: 1.7;
+  font-size: 16.5px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-em,
-i {
-  font-style: italic;
-  opacity: 0.9;
 }
 
 /* =========================
@@ -83,7 +78,7 @@ nav {
 nav a {
   color: #e5e7eb;
   font-weight: 500;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 nav a:hover {
@@ -122,7 +117,7 @@ section {
 }
 
 /* =========================
-   HERO
+   HERO MODERNE
 ========================= */
 
 .hero {
@@ -134,16 +129,35 @@ section {
 
   text-align: center;
 
+  position: relative;
+
   background-color: #111827;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  background: #00bcd4;
+  opacity: 0.08;
+
+  filter: blur(120px);
+
+  top: -150px;
+  right: -150px;
 }
 
 .hero-content {
   max-width: 750px;
+  z-index: 2;
 }
 
 .hero-subtitle {
   color: #00bcd4;
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 20px;
@@ -151,13 +165,17 @@ section {
 }
 
 .hero h1 {
-  font-size: 54px;
-  line-height: 1.2;
+  font-size: 56px;
+
+  background: linear-gradient(90deg, #ffffff, #00bcd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
   margin-bottom: 25px;
 }
 
 .hero-description {
-  font-size: 19px;
+  font-size: 18px;
   color: #cbd5e1;
   margin-bottom: 35px;
 }
@@ -205,19 +223,12 @@ button:hover {
 }
 
 /* =========================
-   ABOUT
+   TITRES SECTIONS
 ========================= */
 
-.about h2,
-.skills h2,
-.projects h2,
-.contact h2 {
+h2 {
   font-size: 42px;
   margin-bottom: 30px;
-}
-
-.about p {
-  max-width: 850px;
 }
 
 /* =========================
@@ -232,7 +243,6 @@ button:hover {
 
 .skill-card {
   background-color: #1f2937;
-  color: #e5e7eb;
 
   padding: 30px 20px;
 
@@ -241,7 +251,7 @@ button:hover {
   text-align: center;
   font-weight: 600;
 
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .skill-card:hover {
@@ -262,11 +272,12 @@ button:hover {
 .project-card {
   background-color: #1f2937;
   border-radius: 20px;
+
   overflow: hidden;
 
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .project-card:hover {
@@ -288,7 +299,7 @@ button:hover {
   color: #cbd5e1;
 }
 
-/* tags tech */
+/* TECH TAGS */
 
 .techs {
   display: flex;
@@ -302,13 +313,14 @@ button:hover {
   color: white;
 
   padding: 6px 12px;
+
   border-radius: 20px;
 
   font-size: 12px;
   font-weight: 600;
 }
 
-/* link github */
+/* LINK GITHUB */
 
 .project-link {
   display: inline-block;
@@ -324,7 +336,7 @@ button:hover {
 
   font-weight: 600;
 
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .project-link:hover {
