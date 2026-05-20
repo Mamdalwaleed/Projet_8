@@ -1,3 +1,5 @@
+import logo from "../assets/logo.png";
+
 function Projects() {
   return (
     <section className="projects" id="projects">
@@ -5,9 +7,8 @@ function Projects() {
 
       <div className="projects-container">
         {/* PROJET 5 */}
-        <div className="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Projet React" />
 
+        <div className="project-card">
           <h3>Kasa - Application React</h3>
 
           <p>
@@ -21,18 +22,24 @@ function Projects() {
             <span>CSS</span>
           </div>
 
-          <a href="#">Voir le projet</a>
+          <a
+            className="project-link"
+            href="https://github.com/Mamdalwaleed/projet_5.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Voir sur GitHub
+          </a>
         </div>
 
         {/* PROJET 6 */}
-        <div className="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Projet Backend" />
 
+        <div className="project-card">
           <h3>Mon Vieux Grimoire - API Back-End</h3>
 
           <p>
             Développement d’une API REST sécurisée avec Node.js, Express et
-            MongoDB. Gestion CRUD complète et authentification utilisateur.
+            MongoDB avec système CRUD et authentification.
           </p>
 
           <div className="techs">
@@ -42,13 +49,19 @@ function Projects() {
             <span>JWT</span>
           </div>
 
-          <a href="#">Voir le projet</a>
+          <a
+            className="project-link"
+            href="https://github.com/Mamdalwaleed/projet-backend.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Voir sur GitHub
+          </a>
         </div>
 
         {/* PROJET 8 */}
-        <div className="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Portfolio" />
 
+        <div className="project-card">
           <h3>Portfolio Développeur Web</h3>
 
           <p>
@@ -62,7 +75,14 @@ function Projects() {
             <span>Responsive</span>
           </div>
 
-          <a href="#">Voir le projet</a>
+          <a
+            className="project-link"
+            href="https://github.com/Mamdalwaleed/Projet_8.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Voir sur GitHub
+          </a>
         </div>
       </div>
 

@@ -4,18 +4,21 @@ function Hero() {
       <div className="hero-content">
         <p className="hero-subtitle">Développeur Web Full-Stack Junior</p>
 
-        <h1>
-          Bonjour, je suis <span>Waleed</span>
-        </h1>
+        <h1>Je développe des applications web modernes et performantes.</h1>
 
         <p className="hero-description">
-          Je développe des applications web complètes, du front-end avec React
-          jusqu’au back-end avec Node.js et bases de données.
+          Front-end avec React, back-end avec Node.js et création d’expériences
+          utilisateurs modernes et responsive.
         </p>
 
         <div className="hero-buttons">
-          <button>Voir mes projets</button>
-          <button className="secondary-btn">Me contacter</button>
+          <a href="#projects">
+            <button>Voir mes projets</button>
+          </a>
+
+          <a href="#contact">
+            <button className="secondary-btn">Me contacter</button>
+          </a>
         </div>
       </div>
     </section>
