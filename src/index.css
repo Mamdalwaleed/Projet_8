@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 /* =========================
-   GLOBAL RESET
+   RESET GLOBAL
 ========================= */
 
 html {
@@ -20,39 +20,43 @@ html {
 }
 
 /* =========================
-   BODY
+   BASE
 ========================= */
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #0f0f0f;
-  color: white;
+  background-color: #0b0f19;
+  color: #e5e7eb;
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+/* =========================
+   TEXT GLOBAL
+========================= */
+
+h1,
+h2,
+h3 {
+  color: #f9fafb;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 em,
 i {
   font-style: italic;
   opacity: 0.9;
-}
-
-/* =========================
-   GENERAL TEXT
-========================= */
-
-h1,
-h2,
-h3 {
-  letter-spacing: -1px;
-}
-
-p {
-  line-height: 1.7;
-}
-
-a {
-  text-decoration: none;
 }
 
 /* =========================
@@ -70,21 +74,16 @@ nav {
 
   padding: 20px 60px;
 
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-nav h2 {
-  font-size: 24px;
-  font-weight: 700;
-}
-
 nav a {
-  color: white;
-  transition: 0.3s ease;
+  color: #e5e7eb;
   font-weight: 500;
+  transition: 0.3s;
 }
 
 nav a:hover {
@@ -98,19 +97,32 @@ ul {
 }
 
 /* =========================
-   GLOBAL SECTION
+   SECTIONS
 ========================= */
 
 section {
   padding: 120px 80px;
 }
 
-/* =========================
-   HERO PREMIUM
-========================= */
+/* alternance propre */
+.about {
+  background-color: #111827;
+}
+
+.skills {
+  background-color: #0b0f19;
+}
+
+.projects {
+  background-color: #111827;
+}
+
+.contact {
+  background-color: #0b0f19;
+}
 
 /* =========================
-   HERO SIMPLE & MODERNE
+   HERO
 ========================= */
 
 .hero {
@@ -120,13 +132,9 @@ section {
   align-items: center;
   justify-content: center;
 
-  padding: 0 50px;
+  text-align: center;
 
   background-color: #111827;
-
-  color: white;
-
-  text-align: center;
 }
 
 .hero-content {
@@ -136,29 +144,21 @@ section {
 .hero-subtitle {
   color: #00bcd4;
   font-size: 15px;
-
   text-transform: uppercase;
   letter-spacing: 2px;
-
   margin-bottom: 20px;
-
   font-weight: 600;
 }
 
 .hero h1 {
   font-size: 54px;
   line-height: 1.2;
-
   margin-bottom: 25px;
-
-  font-weight: 700;
 }
 
 .hero-description {
   font-size: 19px;
-
   color: #cbd5e1;
-
   margin-bottom: 35px;
 }
 
@@ -166,27 +166,6 @@ section {
   display: flex;
   justify-content: center;
   gap: 15px;
-}
-
-/* MOBILE */
-
-@media (max-width: 768px) {
-  .hero {
-    padding: 40px 20px;
-    min-height: 70vh;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .hero-description {
-    font-size: 17px;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-  }
 }
 
 /* =========================
@@ -207,18 +186,17 @@ button {
   background-color: #00bcd4;
   color: white;
 
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   background-color: #0097a7;
 }
 
 .secondary-btn {
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
 }
 
 .secondary-btn:hover {
@@ -230,63 +208,44 @@ button:hover {
    ABOUT
 ========================= */
 
-.about {
-  background-color: #f8fafc;
-  color: #111827;
-}
-
-.about h2 {
+.about h2,
+.skills h2,
+.projects h2,
+.contact h2 {
   font-size: 42px;
   margin-bottom: 30px;
-  font-weight: 700;
 }
 
 .about p {
-  font-size: 19px;
-  margin-bottom: 20px;
   max-width: 850px;
-  color: #374151;
 }
 
 /* =========================
    SKILLS
 ========================= */
 
-.skills {
-  background-color: white;
-  color: #111827;
-}
-
-.skills h2 {
-  font-size: 42px;
-  margin-bottom: 50px;
-}
-
 .skills-container {
   display: grid;
-
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-
   gap: 25px;
 }
 
 .skill-card {
-  background-color: #111827;
-  color: white;
+  background-color: #1f2937;
+  color: #e5e7eb;
 
   padding: 30px 20px;
 
   border-radius: 16px;
 
   text-align: center;
-
   font-weight: 600;
 
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .skill-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
   background-color: #00bcd4;
 }
 
@@ -294,38 +253,24 @@ button:hover {
    PROJECTS
 ========================= */
 
-.projects {
-  background-color: #f8fafc;
-  color: #111827;
-}
-
-.projects h2 {
-  font-size: 42px;
-  margin-bottom: 50px;
-}
-
 .projects-container {
   display: grid;
-
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-
   gap: 30px;
 }
 
 .project-card {
-  background-color: white;
-
+  background-color: #1f2937;
   border-radius: 20px;
-
   overflow: hidden;
 
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 
 .project-card img {
@@ -336,130 +281,86 @@ button:hover {
 
 .project-card h3 {
   padding: 20px 20px 10px;
-  font-size: 24px;
 }
 
 .project-card p {
   padding: 0 20px;
-  color: #4b5563;
+  color: #cbd5e1;
 }
 
-.project-card a {
-  display: inline-block;
+/* tags tech */
 
+.techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   padding: 20px;
+}
 
-  color: #00bcd4;
+.techs span {
+  background-color: #00bcd4;
+  color: white;
 
+  padding: 6px 12px;
+  border-radius: 20px;
+
+  font-size: 12px;
   font-weight: 600;
 }
+
+/* link github */
+
 .project-link {
   display: inline-block;
 
   margin: 20px;
 
-  padding: 12px 20px;
+  padding: 10px 16px;
 
-  background-color: #111827;
+  background-color: #0b0f19;
   color: white;
 
   border-radius: 10px;
 
   font-weight: 600;
 
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .project-link:hover {
   background-color: #00bcd4;
-  transform: translateY(-3px);
 }
 
 /* =========================
-   TECH TAGS
+   OC PROJECTS
 ========================= */
-
-.techs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-
-  padding: 20px;
-}
-
-.techs span {
-  background-color: #00bcd4;
-
-  color: white;
-
-  padding: 8px 14px;
-
-  border-radius: 30px;
-
-  font-size: 13px;
-
-  font-weight: 600;
-}
-
-/* =========================
-   OPENCLASSROOMS PROJECTS
-========================= */
-
-.oc-projects {
-  margin-top: 100px;
-}
-
-.oc-projects h2 {
-  margin-bottom: 30px;
-}
 
 .oc-projects ul {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
 }
 
 .oc-projects li {
-  color: #374151;
-  font-size: 17px;
+  color: #cbd5e1;
 }
 
 /* =========================
    CONTACT
 ========================= */
 
-.contact {
-  background-color: #111827;
-  color: white;
-}
-
-.contact h2 {
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-
-.contact p {
-  color: #cbd5e1;
-  margin-bottom: 40px;
-}
-
 .contact-form {
   display: flex;
   flex-direction: column;
-
   gap: 20px;
-
   max-width: 600px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  padding: 18px;
-
-  border: none;
+  padding: 16px;
   border-radius: 12px;
-
-  font-size: 16px;
+  border: none;
 
   background-color: #1f2937;
   color: white;
@@ -467,12 +368,6 @@ button:hover {
 
 .contact-form textarea {
   min-height: 150px;
-  resize: none;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #94a3b8;
 }
 
 /* =========================
@@ -480,12 +375,9 @@ button:hover {
 ========================= */
 
 .footer {
-  background-color: black;
-
   text-align: center;
-
   padding: 40px;
-
+  background-color: black;
   color: #94a3b8;
 }
 
@@ -502,7 +394,6 @@ button:hover {
 
   ul {
     flex-direction: column;
-    text-align: center;
     gap: 15px;
   }
 
@@ -510,40 +401,11 @@ button:hover {
     padding: 80px 20px;
   }
 
-  .hero {
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .hero-content {
-    margin: auto;
-  }
-
   .hero h1 {
-    font-size: 42px;
-  }
-
-  .hero-description {
-    font-size: 18px;
+    font-size: 36px;
   }
 
   .hero-buttons {
     flex-direction: column;
-    width: 100%;
-  }
-
-  .hero button {
-    width: 100%;
-  }
-
-  .about h2,
-  .skills h2,
-  .projects h2,
-  .contact h2 {
-    font-size: 32px;
-  }
-
-  .project-card img {
-    height: 200px;
   }
 }
